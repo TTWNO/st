@@ -5,9 +5,9 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "mono:pixelsize=16:antialias=true:autohint=true";
-static char *font2[] = { "Inconsolata for Powerline:pixelsize=16:antialias=true:autohint=true" };
-static int borderpx = 2;
+static char *font = "Source Code Pro:pixelsize=38:antialias=true:autohint=true";
+static char *font2[] = { "Inconsolata for Powerline:pixelsize=38:antialias=true:autohint=true" };
+static int borderpx = 0;
 
 /*
  * What program is execed by st depends of these precedence rules:
@@ -81,29 +81,31 @@ char *termname = "st-256color";
  *
  *	stty tabs
  */
-unsigned int tabspaces = 8;
+unsigned int tabspaces = 4;
 
 /* bg opacity */
-float alpha = 0.92;
+float alpha = 0.90;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-	"#282828", /* hard contrast: #1d2021 / soft contrast: #32302f */
-	"#cc241d",
-	"#98971a",
-	"#d79921",
-	"#458588",
-	"#b16286",
-	"#689d6a",
-	"#a89984",
-	"#928374",
-	"#fb4934",
-	"#b8bb26",
-	"#fabd2f",
-	"#83a598",
-	"#d3869b",
-	"#8ec07c",
-	"#ebdbb2",
+    "#000000",
+    "#cfcfcf",
+    "#000000",
+    "#e01010",
+    "#20ad20",
+    "#d4c24f",
+    "#231bb8",
+    "#9c3885",
+    "#1dbdb8",
+    "#fefefe",
+    "#6a6a6a",
+    "#e83a3d",
+    "#35e956",
+    "#ffff2f",
+    "#3a53f0",
+    "#e628ba",
+    "#1cf5f5",
+    "#ffffff",
 	[255] = 0,
 	/* more colors can be added after 255 to use with DefaultXX */
 	"#282828",   /* 256 -> bg */
