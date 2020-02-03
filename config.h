@@ -5,8 +5,8 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Source Code Pro:pixelsize=38:antialias=true:autohint=true";
-static char *font2[] = { "Inconsolata for Powerline:pixelsize=38:antialias=true:autohint=true" };
+static char *font = "Source Code Pro:pixelsize=44:antialias=true:autohint=true";
+static char *font2[] = { "Inconsolata for Powerline:pixelsize=44:antialias=true:autohint=true" };
 static int borderpx = 0;
 
 /*
@@ -230,8 +230,8 @@ static Shortcut shortcuts[] = {
 	{ ControlMask,          XK_Print,       toggleprinter,  {.i =  0} },
 	{ ShiftMask,            XK_Print,       printscreen,    {.i =  0} },
 	{ XK_ANY_MOD,           XK_Print,       printsel,       {.i =  0} },
-	{ TERMMOD,              XK_Prior,       zoom,           {.f = +1} },
-	{ TERMMOD,              XK_Next,        zoom,           {.f = -1} },
+	{ TERMMOD,              XK_plus,       zoom,           {.f = +1} },
+	{ TERMMOD,              XK_underscore,        zoom,           {.f = -1} },
 	{ MODKEY,               XK_Home,        zoomreset,      {.f =  0} },
 	{ ShiftMask,            XK_Insert,      clippaste,      {.i =  0} },
 	{ MODKEY,               XK_c,           clipcopy,       {.i =  0} },
